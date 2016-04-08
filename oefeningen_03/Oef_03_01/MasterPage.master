@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Oefeningen_03</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="page_wrapper">
+            <div id="header_wrapper">
+                <header>
+                    <h1>Oef 3.1</h1>
+                </header>
+            </div>
+            <div id="content_wrapper">
+                <div id="content">
+                    <h2>Aanvraag Tonercassettes</h2>
+                    <asp:Label ID="lblSubtitle" runat="server" Text="" CssClass="subTitle"></asp:Label>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>
+            &copy; Copyright 2016 - University College Arteveldehogeschool, Graphic and Digital Media, Credits to Simen De Troch
+            </p>
+        </footer>
+    </form>
+</body>
+</html>
